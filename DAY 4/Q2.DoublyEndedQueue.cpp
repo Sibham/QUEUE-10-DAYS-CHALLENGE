@@ -1,3 +1,4 @@
+//CODE 360 - DOUBLY ENDED QUEUE
 class Deque
 {	
     int *arr;
