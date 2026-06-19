@@ -1,0 +1,17 @@
+class Solution {
+  public:
+    void reverseQueue(queue<int> &q) {
+        // Base case
+        if(q.empty()) return;
+
+        // Step 1: Remove front element
+        int element = q.front();
+        q.pop();
+
+        // Step 2: Recursively reverse remaining queue
+        reverseQueue(q);
+
+        // Step 3: Push element at the back
+        q.push(element);
+    }
+};
